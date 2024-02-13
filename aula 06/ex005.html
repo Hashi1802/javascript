@@ -5,7 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primeiros Passos com DOM</title>
 </head>
+<style>
+    body{
+        background-color: lightgray;
+        color: rgb(45, 45, 99);
+        font: normal 18pt arial;
+    }
+</style>
 <body>
     <h1>Iniciando estudos com DOM</h1>
+<p>aqui vai o resultado</p>
+<div id="msg">clique em mim</div>
+<p>Aprendendo a usar o <strong>DOM</strong> em java script</p>
+
+<script>
+    var corpo = window.document.body
+    var p1 = window.document.getElementsByTagName('p')[1]
+    var n = window.document.getElementsByName ('name') [0]
+    var d = document.querySelector ('div#msg')
+d.style.background = 'green'
+d.style.color = 'yellow' 
+d.innerHTML = 'estou aguardando...'
+//n.innerText = "chama na catraca"
+//n.style.backgroundColor = "purple"
+//n.style.color =  "white"
+
+</script>
 </body>
 </html>
