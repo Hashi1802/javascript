@@ -4,6 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Somando numeros</title>
+    <style>
+        body{
+            font: normal 18pt arial;
+        }
+        input{
+            font: normal 18pt arial;
+            width: 100px;
+        }
+        div#res{
+            background-color: green;
+            color: white;
+            font-size: 2em;
+        }
+    </style>
 </head>
 <body>
     <h1>Somando valores</h1>
@@ -21,7 +35,7 @@
             var n1 = Number(tn1.value)
             var n2 = Number (tn2.value)
             var s = n1 + n2
-            res.innerHTML = 'A SOMA ENTRE ${n1} E ${n2} E IGUAL A ${s}'
+            res.innerHTML = `A SOMA ENTRE ${n1} E ${n2} E IGUAL A ${s}`
         }
     </script>
 </body>
